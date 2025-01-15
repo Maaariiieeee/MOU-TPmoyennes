@@ -1,0 +1,15 @@
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\bin\Debug\net7.0\MOU-TPmoyennes.exe
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\bin\Debug\net7.0\MOU-TPmoyennes.deps.json
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\bin\Debug\net7.0\MOU-TPmoyennes.runtimeconfig.json
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\bin\Debug\net7.0\MOU-TPmoyennes.dll
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\bin\Debug\net7.0\MOU-TPmoyennes.pdb
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\obj\Debug\net7.0\MOU-TPmoyennes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\obj\Debug\net7.0\MOU-TPmoyennes.AssemblyInfoInputs.cache
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\obj\Debug\net7.0\MOU-TPmoyennes.AssemblyInfo.cs
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\obj\Debug\net7.0\MOU-TPmoyennes.csproj.CoreCompileInputs.cache
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\obj\Debug\net7.0\MOU-TPmoyennes.sourcelink.json
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\obj\Debug\net7.0\MOU-TPmoyennes.dll
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\obj\Debug\net7.0\refint\MOU-TPmoyennes.dll
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\obj\Debug\net7.0\MOU-TPmoyennes.pdb
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\obj\Debug\net7.0\MOU-TPmoyennes.genruntimeconfig.cache
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\obj\Debug\net7.0\ref\MOU-TPmoyennes.dll

@@ -1,0 +1,5 @@
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\obj\Debug\net7.0\HNI-TPmoyennes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\obj\Debug\net7.0\HNI-TPmoyennes.AssemblyInfoInputs.cache
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\obj\Debug\net7.0\HNI-TPmoyennes.AssemblyInfo.cs
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\obj\Debug\net7.0\HNI-TPmoyennes.csproj.CoreCompileInputs.cache
+C:\Users\ourym\source\repos\HNINSTITUT\HNI-TPmoyennes\obj\Debug\net7.0\HNI-TPmoyennes.sourcelink.json
