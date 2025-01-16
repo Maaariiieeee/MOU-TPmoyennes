@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,14 +22,23 @@ namespace MOU_TPmoyennes
 
         public void ajouterNote(Note note)
         {
-            notes.Add(note);
+            if (notes.Count < 200) // On limite le nombre de notes à 200
+            {
+                notes.Add(note);
+            }
+            else
+            {
+                Console.Write("L'élève a trop de notes");
+            }
         }
+
+
 
         public float moyenneMatiere(int matiere)
         {
             float sommeNotes = 0; // pour aditionner toutes les notes 
             int count = 0;  // pour compter les notes
-            double moyenne = 0; 
+            double moyenne = 0;
 
             // Boucle pour parcourir toutes les notes (au maximum 200)
             for (int i = 0; i < notes.Count; i++)
@@ -43,7 +52,7 @@ namespace MOU_TPmoyennes
             if (count > 0) //si il y a au moins une note on fait le calcul
             {
                 moyenne = sommeNotes / count;
-                return (float)Math.Round(moyenne,2); // pour arrondir
+                return (float)Math.Round(moyenne, 2); // pour arrondir
             }
             else //sinon on retourne 0
             {
@@ -56,30 +65,37 @@ namespace MOU_TPmoyennes
         {
             float sommeMoyennes = 0; // Pour additionner les moyennes des matières
             int count = 0;  // Pour compter le nombre de matières
+            List<int> matieresTraitees = new List<int>(); //Matieres stockées
 
-            // Boucle sur les 10 matières possibles (ou jusqu'à la dernière matière de l'élève)
-            for (int matiere = 1; matiere <= 10; matiere++)
+            //Boucle sur les notes de l'élève
+            foreach (var note in notes)
             {
-                float moyMatiere = moyenneMatiere(matiere); // Appel à la méthode moyenneMatiere pour chaque matière
 
-                if (moyMatiere > 0) // Si la moyenne de la matière est valide (i.e. l'élève a des notes dans cette matière)
+
+                if (!matieresTraitees.Contains(note.matiere)) // Si la matière n'a pas encore été traitée
                 {
-                    sommeMoyennes += moyMatiere; // On ajoute la moyenne de la matière à la somme
-                    count++; // On incrémente le nombre de matières ayant une note
+                    float moyMatiere = moyenneMatiere(note.matiere); // Appel à la méthode moyenneMatiere pour cette matière
+                    if (moyMatiere > 0) // Si la moyenne de la matière  est valide
+                    {
+                        sommeMoyennes += moyMatiere; // On ajoute la moyenne de la matière à la somme
+                        count++; // On incrémente le nombre de matire de la de leleve
+                        matieresTraitees.Add(note.matiere); // On ajoute la matière à la liste des matières traitées
+                    }
                 }
             }
 
-            // Si l'élève a des matières avec des notes, on calcule la moyenne générale
-            if (count > 0)
-            {
-                return (float)Math.Round(sommeMoyennes / count, 2); // Moyenne générale arrondie à 2 décimales
-            }
-            else
-            {
-                return 0.0f; // Aucun résultat si aucune matière n'a de notes
-            }
+                // Si l'élève a des matières avec des notes, on calcule la moyenne générale
+                if (count > 0)
+                {
+                    return (float)Math.Round(sommeMoyennes / count, 2); // Moyenne générale arrondie à 2 décimales
+                }
+                else
+                {
+                    return 0.0f; // Aucun résultat si aucune matière n'a de notes
+                }
+            
+
+
         }
-
-
     }
 }
