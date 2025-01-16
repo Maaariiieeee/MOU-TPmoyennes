@@ -32,7 +32,7 @@ namespace MOU_TPmoyennes
             double moyenne = 0; 
 
             // Boucle pour parcourir toutes les notes (au maximum 200)
-            for (int i = 0; i < 200; i++)
+            for (int i = 0; i < notes.Count; i++)
             {
                 if (notes[i].matiere == matiere) // si la note est dans la matière concernée, on l'ajoute
                 {
